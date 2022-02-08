@@ -1,0 +1,78 @@
+footer{
+    height: 40em;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    align-items: end;
+}
+#card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        'info signup';
+    align-items: end;
+    position: relative;
+    /* display: flex; */
+
+}
+
+.info {
+    grid-area: info;
+    place-self: center;
+    padding: 5px;
+    width: 60%;
+    max-width: 420px;
+    height: 240px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 7px;
+}
+
+.getStarted {
+    grid-area: signup;
+    place-self: right;
+    width: 100%;
+    max-width: 480px;
+    min-width: 180px;
+    height: 20em;
+    padding: 10px;
+    /* border-top-left-radius: 90px; */
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px var(--shadowColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: end;
+    text-align: justify;
+    position: absolute;
+    right: 20%;
+    top: 10%;
+    z-index: 2;
+}
+.getStarted a{
+    color: coral;
+    background: var(--color1);
+    border-radius: 10px;
+    padding: 10px;
+    filter: brightness(.8);
+}
+.getStarted a:hover{
+    filter: brightness(1);
+}
+.getStarted a:active{
+    transform: scale(.94);
+}
+.getStarted a:visited{
+    color: rgb(240, 204, 46);
+}
+.ending{
+    background: var(--color1);
+    text-align: center;
+    z-index: -1;
+    height: 100%;
+}

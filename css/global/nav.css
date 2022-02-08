@@ -1,0 +1,13 @@
+nav{
+    height: 20%;
+    background: var(--color1);
+    margin-bottom: 2em;
+    padding: 1em 0 1.3em 0;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}

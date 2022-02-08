@@ -1,0 +1,20 @@
+:root{
+    --color1: rgb(23, 155, 243);
+    --shadowColor: rgba(0, 0, 0, 0.158);
+}
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    user-select: none;
+}
+main{
+    margin: 0 1em;
+}
+*::selection{
+    background: coral;
+}
+
