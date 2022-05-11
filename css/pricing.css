@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Dongle Regular";
+  src: url("../font/Dongle-Regular.ttf");
+}
+
+html {
+  /* height: 100%; */
+}
+
+body {
+  font-family: "Dongle-Regular", Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: larger;
+  /* height: 100%; */
+}
+
+nav {
+  background-color: CornflowerBlue;
+  width: 100%;
+  height: 4rem;
+}
+
+.pricing-main-container {
+  /* height: 100%; */
+  padding: 0 5em 4em 5em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #ccc;
+}
+
+.pricing-caption {
+  width: 50%;
+  margin: 4em;
+  text-align: justify;
+}
+
+.pricing-list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  column-gap: 60px;
+}
+
+.pricing-card-basic,
+.pricing-card-classic,
+.pricing-card-premium {
+  width: 350px;
+  padding: 0 0 0 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.pricing-card-basic:hover,
+.pricing-card-classic:hover,
+.pricing-card-premium:hover {
+  /* box-shadow: 0px 0px 10px 10px rgb(255, 255, 255); */
+  transform: scale(1.02);
+}
+
+.pricing-card-basic {
+  margin-top: 2em;
+}
+
+.pricing-card-basic .purchase-button {
+  background-color: grey;
+}
+
+.pricing-card-classic .purchase-button {
+  background-color: #0380cf;
+  /*#2c6fbb*/
+}
+
+.pricing-card-premium {
+  margin-top: 2em;
+}
+
+.pricing-card-premium .purchase-button {
+  background-color: #ffeb00;
+}
+
+.pricing-card-premium .service-category {
+  background: linear-gradient(90deg, #ffff00 38%, #ffb800 100%);
+}
+
+.pricing-card-classic .service-category {
+  background: linear-gradient(90deg, #00aeff 0%, #092d79 100%);
+}
+
+.pricing-card-basic .service-category {
+  background: linear-gradient(90deg, rgba(182, 182, 182, 1) 16%, #536878 99%);
+}
+
+.service-category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  text-align: center;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+  border-radius: 10px;
+  transform: scale(1.07);
+  color: #fff;
+  box-shadow: 0 100px 1px #ccc;
+  text-transform: uppercase;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.service-category-container {
+  filter: drop-shadow(0 10px 0 #9b9b9b);
+}
+
+.service-category h1 {
+  margin: 0;
+}
+
+.service-list {
+  /* padding: 0; */
+  margin-bottom: 0;
+}
+
+.service-included::marker,
+.service-excluded::marker {
+  position: relative;
+  top: 2px;
+}
+
+.service-included {
+  list-style-image: url("../assets/icons/checked20.png");
+  padding: 10px 0 10px 10px;
+}
+
+.service-excluded {
+  list-style-image: url("../assets/icons/cancel20.png");
+  padding: 10px 0 10px 10px;
+}
+
+.price {
+  font-size: xx-large;
+  text-align: center;
+}
+
+.purchase-info {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.purchase-button {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em;
+  margin-top: 1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: bolder;
+  width: 100%;
+  height: 60px;
+  vertical-align: middle;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px -10px 0 #9b9b9b;
+}
+
+.purchase-button:hover {
+  filter: brightness(0.9);
+}
+
+@media screen and (max-width: 992px) {
+  .pricing-main-container {
+    padding: 0 2em 2em 2em;
+  }
+
+  .pricing-caption {
+    width: 70%;
+    margin: 1em;
+  }
+
+  .pricing-card-classic {
+    margin-top: 2em;
+  }
+
+  .pricing-list {
+    column-gap: normal;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pricing-main-container {
+    padding: 0 1.5em 1em 1.5em;
+  }
+
+  .pricing-caption {
+    width: 100%;
+    margin: 1em;
+  }
+
+  .pricing-list {
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pricing-card-basic,
+  .pricing-card-classic,
+  .pricing-card-premium {
+    width: 100%;
+    padding: 0 0 0 0;
+  }
+
+  .pricing-card-basic:hover,
+  .pricing-card-classic:hover,
+  .pricing-card-premium:hover {
+    transform: none;
+  }
+}

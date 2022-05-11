@@ -1,0 +1,187 @@
+.container {
+    display: flex;
+
+    margin: 0 2rem;
+
+
+    position: relative;
+}
+
+.overView {
+    margin-bottom: 5rem;
+    margin-left: 2.5rem;
+}
+
+/*--- Card 2-----*/
+.card-2 {
+    margin: 0.5%;
+    margin-right: 1%;
+
+    border-radius: 5px;
+
+    padding: 0;
+    width: 18rem;
+
+    background-color: rgb(251, 250, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.256);
+    z-index: 1;
+    transition: 0.3s all;
+}
+
+.card-2:hover {
+    transform: scale(1.05);
+}
+
+.cardHeader-2 {
+    margin: 0;
+}
+
+.cardHeader-2>figure>img {
+    position: relative;
+    right: 2.5rem;
+    bottom: 1rem;
+    width: 18rem;
+    height: 13rem;
+
+}
+
+.description {
+    padding: 0 10px 0 10px;
+}
+
+.description>p {
+    color: var(--cardDescriptionColor);
+}
+
+.description>h3 {
+    margin: 0;
+
+}
+
+@media screen and (max-width : 600px) {
+    .container {
+        margin: 0;
+
+    }
+
+    .overView {
+        margin-bottom: 5rem;
+        margin-left: 0rem;
+
+        width: 98vw;
+        height: 26rem;
+        overflow-x: scroll;
+    }
+
+    .card-2 {
+        margin: 0.5%;
+        margin-right: 3%;
+        margin-top: 5%;
+
+        padding: 0;
+        width: 16rem;
+    }
+
+    .card-2:hover {
+        transform: scale(1.025);
+    }
+
+    .cardHeader-2 {
+        height: 11.5rem;
+    }
+
+    .cardHeader-2>figure>img {
+        position: relative;
+        right: 2.5rem;
+        bottom: 1rem;
+        width: 16rem;
+        height: 11rem;
+
+    }
+}
+
+@media screen and (min-width : 600px) and (max-width: 768px) {
+    .container {
+        margin: 0;
+
+    }
+
+    .overView {
+        margin-bottom: 5rem;
+        margin-left: 0rem;
+
+        width: 98vw;
+        height: 27rem;
+        overflow-x: scroll;
+    }
+
+    .card-2 {
+        margin: 0.5%;
+        margin-right: 3%;
+        margin-top: 5%;
+
+        padding: 0;
+        width: 16rem;
+    }
+
+    .card-2:hover {
+        transform: scale(1.025);
+    }
+
+    .cardHeader-2 {
+        height: 11.5rem;
+    }
+
+    .cardHeader-2>figure>img {
+        position: relative;
+        right: 2.5rem;
+        bottom: 1rem;
+        width: 16rem;
+        height: 11rem;
+
+    }
+}
+
+
+@media screen and (min-width : 768px) and (max-width: 1300px) {
+    .container {
+        margin: 0;
+
+    }
+
+    .overView {
+        margin-bottom: 5rem;
+        margin-left: 0rem;
+
+        width: 98vw;
+        height: 27rem;
+        overflow-x: scroll;
+    }
+
+    .card-2 {
+        margin: 0.5%;
+        margin-right: 3%;
+        margin-top: 5%;
+
+        padding: 0;
+        width: 16rem;
+    }
+
+    .card-2:hover {
+        transform: scale(1.025);
+    }
+
+    .cardHeader-2 {
+        height: 11.5rem;
+    }
+
+    .cardHeader-2>figure>img {
+        position: relative;
+        right: 2.5rem;
+        bottom: 1rem;
+        width: 16rem;
+        height: 11rem;
+
+    }
+
+}

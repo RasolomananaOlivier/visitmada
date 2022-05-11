@@ -1,0 +1,235 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.signupForm
+
+/*form and image container*/
+    {
+    margin: 3em;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.379);
+    padding: 0;
+
+    display: flex;
+
+
+
+
+    height: 90vh;
+    width: 60vw;
+}
+
+/* Making the form and images section side by side with equal area*/
+
+
+
+/*form and h1{Signup} division*/
+
+figure {
+
+    height: 90vh;
+}
+
+.form {
+    padding: 2em;
+    width: 60%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 10px var(--shadowColor);
+    object-fit: cover;
+}
+
+form {
+    height: 75vh;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1em;
+    height: 75vh;
+    border: none;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin: 7px 0;
+}
+
+h1 {
+    margin: 0;
+    padding-left: .5em;
+    font-size: 2.4em;
+}
+
+/* *********************Inputs styles********************* */
+label {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+input {
+    font-size: 1.3em;
+    transform: scale(0);
+}
+
+input:first-child {
+    animation: showName 1.5s forwards;
+}
+
+input:nth-child(2) {
+    animation: showTel 1.5s forwards;
+}
+
+input:nth-child(3) {
+    animation: showEmail 1.5s forwards;
+}
+
+input:nth-child(4) {
+    animation: showPassword 1.5s forwards;
+}
+
+input:last-child {
+    animation: showButton 1.5s forwards;
+}
+
+
+
+/* Styles for input type submit  */
+input[type="submit"] {
+    font-size: 1.5em;
+    border-radius: 5px;
+    background: var(--themeColor);
+    color: white;
+    margin-top: 3em;
+    border-color: gray;
+}
+
+input[type="submit"]:hover {
+    background: var(--buttonHover);
+    box-shadow: 0 0 5px var(--shadowColor);
+}
+
+input[type="submit"]:active {
+    transform: scale(.97);
+}
+
+/* Placeholder style  */
+::-webkit-input-placeholder {
+    color: var(--alphaThemeColor);
+}
+
+/* Other input styles */
+/* input[type="text"], input[type="tel"], input[type="email"], input[type="password"], { */
+input {
+    border-radius: 5px;
+    border: 2px solid var(--themeColor);
+    text-align: center;
+    color: var(--lightThemeColor);
+
+}
+
+/* input[type="text"]::selection, input[type="tel"]::selection, input[type="email"]::selection, input[type="password"]::selection{ */
+input::selection {
+    border: 2px solid var(--lightThemeColor) !important;
+
+}
+
+/* input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, input[type="password"]:focus{ */
+input:focus {
+    border: 2px solid var(--lightThemeColor);
+    box-shadow: 0 0 10px var(--shadowColor);
+}
+
+/* input[type="text"]:hover, input[type="tel"]:hover, input[type="email"]:hover, input[type="password"]:hover{ */
+input:hover {
+    border: 2px solid var(--themeColor);
+    box-shadow: 0 0 10px var(--shadowColor);
+}
+
+/* *******************Animation***************** */
+
+@keyframes showName {
+    20% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes showTel {
+    40% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes showEmail {
+    60% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes showPassword {
+    80% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes showButton {
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* *************Responsive*************** */
+
+@media screen and (max-width:768px) {
+    figure {
+        display: none;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .signupForm {
+        width: 80vw;
+        background: url(./../assets/img/signup/Signup.jpeg) no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .form {
+        width: 100%;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+
+    fieldset {
+        height: 75vh;
+    }
+}

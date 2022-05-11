@@ -1,159 +1,389 @@
-header{
+/*
+<header>
+    <div class="imageContainer">
+    </div>
+
+    <div class="descriptionOfTheRegion">
+    </div>
+</header>
+*/
+header {
     position: relative;
-    height: 50em;
+    top: 4rem;
+    right: 9rem;
+    height: 85vh;
+    margin-bottom: 5rem;
+
+    display: flex;
+    /* border: dotted; */
 }
-header img, header h2{
+
+
+/*================================================================
+  imageContainer
+  ================================================================*/
+/*
+<div class="imageContainer">
+    <img id="secondImg" src="./../assets/img/antananarivo/tana1.jpg" alt="">
+    <img id="firsecondImg" src="./../assets/img/antananarivo/tana2.jpg" alt="">
+    <img id="rdImg" src="./../assets/img/antananarivo/tana3.jpg" alt="">
+</div>
+*/
+.imageContainer {
+    position: relative;
+}
+
+#firstImg,
+#secondImg,
+#thirdImg {
     position: absolute;
-    box-shadow: 0 0 10px var(--shadowColor);
 }
-header h2{
-    padding: 5px;
-    background: transparent;
-    border-radius: 20px;
-    top: 73%;
-    left: 50%;
+
+#firstImg {
+    width: 34rem;
+    top: 2rem;
+    left: 22rem;
 }
-#stImg{
-    top: 25%;
-    left: 30%;
-    transform: translateX(-50%);
-    width: 20em !important;
-    /* max-width: 20em !important;
-    min-width: 10em !important; */
-    z-index: 2;
+
+#secondImg {
+    width: 20rem;
+    top: 10rem;
+    left: 12rem;
 }
-#ndImg{
-    top: 5%;
-    left: 32%;
-    width: 30em !important;
-    /* max-width: 30em !important;
-    min-width: 18em !important; */
+
+
+#thirdImg {
+    width: 30rem;
+    top: 20rem;
+    left: 17rem;
     z-index: 3;
 }
 
-#rdImg{
-    top: 40%;
-    left: 25%;
-    width: 37em !important;
-    /* max-width: 37em !important;
-    min-width: 22em !important; */
-}
-header p{
-    text-align: justify;
+/*================================================================
+  descriptionOfTheRegion
+  ================================================================*/
+/*
+<div class="descriptionOfTheRegion">
+    <h2></h2>
+    <p></p>
+</div>
+*/
+
+/* Position of the description must be to right of the img */
+.descriptionOfTheRegion {
+
     position: absolute;
-    top: 80%;
-    left: 20%;
+    right: -5rem;
+    top: 4rem;
+
+    width: 28rem;
+    height: 20rem;
 }
 
-/*********************************************************/
-.article{
-    margin: 100px 0;
+.descriptionOfTheRegion>h2 {
+    font-size: 2rem;
 }
 
-.article:nth-child(odd) .block .card:nth-child(even){
-    display: flex;
-    flex-direction: column-reverse;
-}
-.article:nth-child(even) .block .card:nth-child(odd){
-    flex-direction: column-reverse;
+.descriptionOfTheRegion>p {
+    color: var(--paragrapheColor);
 }
 
-.block{
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row; */
-}
-.block img{
-    width: 100%;
-    box-shadow: 0 0 10px var(--shadowColor);
+/*================================================================
+  main
+  ================================================================*/
+/*
+<main>
+   <!-- The hotel section  -->
+    <section class="article"></section>
+
+        <!-- The restaurant section -->
+    <section class="article"></section>
+
+        <!-- The must-visit place section -->
+    <section class="article"></section>
+
+        <!-- Other section -->
+    <section class="article"></section>
+</main>
+*/
+main {}
+
+/*================================================================
+  header
+  ================================================================*/
+/*
+<div class="header">
+    <h1></h1>
+    <p></p>
+</div>
+*/
+.header {
+
+    padding-left: 5rem;
 }
 
-.article h2{
-    text-align: center;
-    padding-bottom: 10px;
+/* start */
+.star-icon {
+    width: 14px;
+    height: 14px;
 }
 
-.card{
-    padding: 10px 3em;
-    border: 1px solid var(--color1);
-    margin: 10px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 10px;
-}
-.card p{
-    text-align: center;
-    /* width: 70%; */
-}
-
-/* footer */
-
-
-@media  screen and (max-width:768px) {
-    .block{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-            'card1 card2'
-            'card3 card3';
-        align-items: center;
-        justify-items: center;
-    }
-    .block .card:first-child{
-        grid-area: card1;
-    }
-    .block .card:nth-child(even){
-        grid-area: card2;
-    }
-    .block .card:last-child{
-        grid-area: card3;
-        width: 50%;
-        
-    }
-    #stImg{
-        width: 15em !important;
-    }
-    #ndImg{
-        width: 25em !important;
-    }
-    #rdImg{
-        width: 32em !important;
-        top: 36%;
-    }
-    header h2{
-        top: 65%;
-        left: 57%;
-    }
-}
 
 @media screen and (max-width: 600px) {
-    .block{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-            'card1'
-            'card2'
-            'card3';
+
+
+    header {
+        flex-direction: column;
+        top: 0rem;
+        right: 0rem;
+        height: 45rem;
     }
 
-    .block .card:first-child{
-        grid-area: card1;
-    }
-    .block .card:nth-child(even){
-        grid-area: card2;
-    }
-    .block .card:last-child{
-        grid-area: card3;
-        width: 100%;
-    }
-    html{
-        width: 100%;
+    .imageContainer {
+        position: relative;
+        height: 30rem;
     }
 
+    #firstImg {
+        width: 75vw;
+        height: 200px;
+        top: 5rem;
+        left: 18vw;
+    }
+
+    #secondImg {
+        width: 33vw;
+        height: 150px;
+        top: 10rem;
+        left: 1rem;
+    }
+
+    #thirdImg {
+        width: 57vw;
+        height: 180px;
+        top: 13rem;
+        left: 30vw;
+        z-index: 3;
+    }
+
+
+    .descriptionOfTheRegion {
+
+        position: relative;
+
+        top: 0;
+        right: 0rem;
+        padding: 0 0.7rem;
+        width: 95%;
+
+    }
+
+    main {
+        position: relative;
+        top: 17rem;
+
+        padding: 0 0.7rem;
+
+    }
+
+    .header {
+
+        padding-left: 0rem;
+    }
+
+    .divider {
+        height: 5rem;
+    }
+}
+
+@media screen and (min-width : 600px) and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        top: 0rem;
+        right: 0rem;
+        height: max-content;
+        margin-bottom: 0;
+    }
+
+    .imageContainer {
+        position: relative;
+        height: 25rem;
+    }
+
+    #firstImg {
+        width: 75vw;
+        height: 200px;
+        top: 5rem;
+        left: 18vw;
+    }
+
+    #secondImg {
+        width: 33vw;
+        height: 150px;
+        top: 10rem;
+        left: 2rem;
+    }
+
+    #thirdImg {
+        width: 57vw;
+        height: 170px;
+        top: 13rem;
+        left: 30vw;
+        z-index: 3;
+    }
+
+
+    .descriptionOfTheRegion {
+
+        position: relative;
+
+        top: 0;
+        right: 0rem;
+        padding: 0 0.7rem;
+        width: 95%;
+
+    }
+
+    main {
+        position: relative;
+        top: 17rem;
+
+        padding: 0 0.7rem;
+
+    }
+
+    .header {
+
+        padding-left: 0rem;
+    }
+
+    .divider {
+        height: 4rem;
+    }
+}
+
+@media screen and (min-width : 768px) and (max-width: 1300px) {
+    header {
+        flex-direction: column;
+        top: 0rem;
+        right: 0rem;
+        height: max-content;
+    }
+
+    .imageContainer {
+        position: relative;
+        height: 25rem;
+    }
+
+    #firstImg {
+        width: 75vw;
+        height: 15rem;
+        top: 5rem;
+        left: 18vw;
+    }
+
+    #secondImg {
+        width: 33vw;
+        top: 10rem;
+        left: 2rem;
+    }
+
+    #thirdImg {
+        width: 57vw;
+        top: 13rem;
+        left: 30vw;
+        z-index: 3;
+    }
+
+
+    .descriptionOfTheRegion {
+
+        position: relative;
+
+        top: 0;
+        right: 0rem;
+        padding: 0 0.7rem;
+        width: 95%;
+
+    }
+
+    main {
+        position: relative;
+        top: 17rem;
+
+        padding: 0 0.7rem;
+
+    }
+
+    .header {
+
+        padding-left: 0rem;
+    }
+
+    .divider {
+        height: 4rem;
+    }
+}
+
+@media screen and (min-width : 1000px) and (max-width: 1300px) {
+    header {
+        flex-direction: column;
+        top: 0rem;
+        right: 0rem;
+        height: max-content;
+    }
+
+    .imageContainer {
+        position: relative;
+        height: 25rem;
+    }
+
+    #firstImg {
+        width: 75vw;
+        height: 15rem;
+        top: 5rem;
+        left: 18vw;
+    }
+
+    #secondImg {
+        width: 33vw;
+        top: 10rem;
+        left: 2rem;
+    }
+
+    #thirdImg {
+        width: 57vw;
+        top: 13rem;
+        left: 30vw;
+        z-index: 3;
+    }
+
+
+    .descriptionOfTheRegion {
+
+        position: relative;
+
+        top: 2.5rem;
+        right: 0rem;
+        padding: 0 0.7rem;
+        width: 95%;
+
+    }
+
+    main {
+        position: relative;
+        top: 17rem;
+
+        padding: 0 0.7rem;
+
+    }
+
+    .header {
+
+        padding-left: 0rem;
+    }
+
+    .divider {
+        height: 4rem;
+    }
 }

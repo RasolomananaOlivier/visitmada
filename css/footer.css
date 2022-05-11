@@ -1,20 +1,20 @@
 footer {
     display: flex;
     flex-direction: column;
-
-
 }
 
 footer>h1 {
     text-align: center;
     font-size: 160%;
+
+    /* Change if need */
     position: relative;
-    top: 6.7rem;
+    top: 9rem;
 }
 
 footer>h1+hr {
     position: relative;
-    top: 6.7rem;
+    top: 9rem;
 }
 
 footer div {
@@ -33,12 +33,16 @@ footer div {
 }
 
 .contact>h4 {
-    padding-left: 5rem;
+    padding-left: 5%;
+    /********/
+    width: 70%;
+    color: rgb(41, 40, 40);
+    font-weight: 300;
 }
 
 .contact>ul {
     position: relative;
-    right: 7rem;
+    right: 18%;
 }
 
 .contact>ul {
@@ -54,11 +58,11 @@ footer div {
     box-shadow: var(--shadow);
     border: none;
     position: relative;
-    top: 5rem;
+    top: 7rem;
     right: 2rem;
-    width: 60%;
+    width: 55%;
 
-    padding: 4rem 2.5rem;
+    padding: 7rem 2.5rem 3rem 2.5rem;
     margin: 2rem;
 
     background: #fff;
@@ -73,19 +77,50 @@ footer div {
     height: 36px;
 }
 
+.diamond {
+    width: 120px;
+    height: 120px;
+
+    position: absolute;
+    top: 1rem;
+
+}
+
 .copyright {
     background-color: var(--themeColor);
     height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.contact-item {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10%;
 }
 
 @media screen and (max-width : 600px) {
-    footer div {
+    footer>div {
 
         flex-direction: column;
     }
 
+    .contact {
+
+        top: 6.5rem;
+    }
+
     .contact>h4 {
-        padding-left: 1.4rem;
+        padding: 0 0.5rem;
+        text-align: center;
+        width: 95%;
     }
 
     .contact>ul {
@@ -93,30 +128,117 @@ footer div {
     }
 
     .getStarted {
+        width: 70%;
 
-        top: 4rem;
-        right: 0.5rem;
-
+        right: 0;
+        margin: 0 1rem;
     }
+
+    .copyright p {
+        position: relative;
+        top: 4rem;
+        right: 30%;
+    }
+
 }
 
 @media screen and (min-width : 600px) and (max-width: 768px) {
+    footer {}
+
+    .contact {
+        top: 4.5rem;
+        right: 3rem;
+
+    }
+
+    .diamond {
+        display: none;
+    }
+
     .getStarted {
-        width: 80%;
+        width: 40rem;
         top: 7rem;
-        padding: 4rem 2rem;
+        padding: 4rem 0.8rem;
+
+        margin: 0;
     }
 
     .getStarted>h2 {
         font-size: 105%;
     }
 
+    .contact>h4 {
+        /********/
+        width: 80%;
+        margin-left: 8%;
+
+        font-weight: 300;
+    }
+
+
+
+    .contact>ul {
+        left: 5%;
+        bottom: 1.5rem;
+
+        flex-direction: row;
+    }
+
+    .contact-item {
+        display: flex;
+        margin-right: 20px;
+    }
+}
+
+
+@media screen and (min-width : 768px) and (max-width: 1300px) {
     .contact {
         top: 4.5rem;
         right: 3rem;
+
     }
 
-    .contact>ul {
-        right: 3rem;
+    .diamond {
+        display: none;
     }
+
+    .getStarted {
+        width: 45rem;
+        top: 7rem;
+        padding: 4rem 0.8rem;
+
+        margin: 0;
+    }
+
+    .getStarted>h2 {
+        font-size: 105%;
+    }
+
+    .contact>h4 {
+        /********/
+        width: 80%;
+        margin-left: 8%;
+
+        font-weight: 300;
+    }
+
+
+
+    .contact>ul {
+        left: 5%;
+        bottom: 1.5rem;
+
+        flex-direction: row;
+    }
+
+    .contact-item {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .copyright {
+        height: 170px;
+
+    }
+
 }

@@ -12,163 +12,704 @@
 </head>
 
 <body>
-
-    <!-- Home section -->
-    <section class="home" id="home">
-        <header>
-            <h1>Some header text</h1>
-        </header>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quam facere explicabo autem possimus culpa
-            pariatur aspernatur doloribus beatae a aperiam voluptates velit cupiditat
-        </p>
-
-        <a href="#navbar"><button class="button button-50"> View all </button></a>
-
-    </section>
-
     <!-- Navigation -->
-    <nav id="navbar">
-        <ul>
-            <li>Logo</li>
-            <li class="navItem"><a href="#home">Home</a></li>
-            <li class="navItem"><a href="#contact">Contact</a></li>
-            <li class="navItem"><a href="#">Go for a trip</a></li>
-            <ul class="navButton">
-                <button class="buttonMenu">button </button>
+    <nav>
+        <ul class="gridNav">
+            <li class="logo"><span class="logo-part1">Mada</span>Trip</li>
+
+            <ul class="middleItems">
+                <li class="navItem middle"><a href="/">Home</a></li>
+                <li class="navItem middle"><a href="#contact">Contact</a></li>
+                <li class="navItem middle dropdown">
+                    <div class="dropbutton">Regions</div>
+                    <div class="dropdown-content-nav">
+                        <a href="./pages/Antananarivo.html">Antananarivo</a>
+                        <a href="./pages/Toamasina.html">Toamasina</a>
+                        <a href="./pages/Antsiranana.html">Antsiranana</a>
+                        <a href="./pages/Mahajanga.html">Mahajanga</a>
+                        <a href="./pages/Fianarantsoa.html">Fianarantsoa</a>
+                        <a href="./pages/Toliara.html">Toliara</a>
+                    </div>
+                </li>
+
+            </ul>
+            <li class="navItem"><a href="./pages/Signup.html">Go for a trip</a></li>
+            <ul class="dropdown-btn">
+                <button class="buttonMenu"><img src="./assets/icons/humberger menu.svg" /> </button>
                 <div class='dropdown-content'>
 
-                    <a href="">value</a>
-                    <a href="">value</a>
-                    <a href="">value</a>
+                    <a href="/" class="navItemSmallScreen">Home</a>
+                    <a href="#contact" class="navItemSmallScreen">Contact</a>
+                    <a href="./pages/Signup.html" class="navItemSmallScreen">Go for a trip</a>
+                    <li class="navItemSmallScreen dropdown ">
+                        <div class="dropbutton">Regions</div>
+                        <div class="dropdown-content-nav2">
+                            <a href="./pages/Antananarivo.html">Antananarivo</a>
+                            <a href="./pages/Toamasina.html">Toamasina</a>
+                            <a href="./pages/Antsiranana.html">Antsiranana</a>
+                            <a href="./pages/Mahajanga.html">Mahajanga</a>
+                            <a href="./pages/Fianarantsoa.html">Fianarantsoa</a>
+                            <a href="./pages/Toliara.html">Toliara</a>
+                        </div>
+                    </li>
                 </div>
 
             </ul>
         </ul>
     </nav>
 
+    <!-- Home section -->
+    <section class="home" id="home">
+        <div class="home-container">
+            <header>
+                <h1>Visit Madagascar with us</h1>
+            </header>
+            <p>
+                We are a startup that plans your trip around Madagascar, with
+                a minimal depense but offer you comfortable and awesome voyage, that
+                you will remember forever.
+            </p>
+
+            <a href="#allDestination"><button class="button button-50"> View all </button></a>
+        </div>
+
+        <div class="blur-container">
+
+        </div>
+    </section>
+
+
+    <div id="allDestination"></div>
 
     <!-- Introduction for Madagascar -->
-    <h1>Lorem ipsum dolor sit amet.</h1>
+
 
     <!-- Region one-->
-    <section class="regionIntroOdd">
-        <article>
-            <h1>
+    <section class="regionIntro">
+        <article class="">
+            <h1 class="title">
                 <a href="./pages/Antananarivo.html">Antananarivo</a>
             </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste hic qui delectus voluptatibus assumenda
-                quod, eligendi minima iure at eius!
+            <p class="little-descri">
+                Fondly known as Tana, Madagascar’s capital is home to Ivato International
+                Airport (TNR) and as such is the first port of call for most overseas
+                visitors. Its central location
+                makes it the ideal base for visiting the rest of the island’s attractions - but it’s also well worth
+                exploring in its own right.
             </p>
         </article>
-        <figure>
-            <a href="./pages/Antananarivo.html">
-                <img src="./assets/img/home.jpg" alt="regionname" srcset="" />
-            </a>
-            <!-- -->
-        </figure>
+
     </section>
+    <div class="overView">
+        <div class="comment2">
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Analakely Market</h3>
+                    <div>
+
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                    </div>
+                    <p class="clamp">
+                        Tana’s main marketplace is not a tourist
+                        attraction, but a bustling,
+                        chaotic destination full of local vendors selling everything from
+                        traditional fabrics to household items and souvenirs.
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/2.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Ibis Hotel</h3>
+                    <div>
+
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                    </div>
+                    <p class="clamp">
+                        Located in the heart of Ankorodrano’s business district,
+                        Hotel Ibis Antananarivo Madagascar is 10 minutes'
+                        drive from Avenue de l'Indépendance.
+                        It offers a terrace overlooking an outdoor swimming
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/3.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Hôtel Colbert - Spa & Casino</h3>
+                    <div>
+
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                    </div>
+                    <p class="clamp">
+                        Offering a casino and a spa with indoor pool,
+                        Hotel Colbert is located in Antananarivo.
+                        Guests
+                        benefit from free access to the sauna, hammam and fitness centre.
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/4.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <div>
+
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <a href="./pages/Antananarivo.html">
+                <button class="chevron-button">
+                    <img src="./assets/icons/right-chevron.png" class="chevron-icon" alt="" srcset="">
+                </button>
+            </a>
+        </div>
+
+    </div>
 
     <!-- Region two-->
-    <section class="regionIntroEven">
-
-        <figure>
-            <img src="./assets/img/home.jpg" alt="regionname" srcset="" />
-        </figure>
-        <article>
-            <h1>
-                <a href="./pages/Mahajanga.html">Mahajanga</a>
+    <section class="regionIntro">
+        <article class="">
+            <h1 class="title">
+                <a href="./pages/Antananarivo.html">Antananarivo</a>
             </h1>
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste hic qui delectus voluptatibus assumenda
+            <p class="little-descri">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Iste hic qui delectus voluptatibus assumenda
                 quod, eligendi minima iure at eius!
             </p>
         </article>
+
     </section>
+    <div class="overView">
+        <div class="comment2">
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <a href="./pages/Antananarivo.html">
+                <button class="chevron-button">
+                    <img src="./assets/icons/right-chevron.png" class="chevron-icon" alt="" srcset="">
+                </button>
+            </a>
+        </div>
+
+    </div>
 
     <!-- Region three-->
-    <section class="regionIntroOdd">
-        <article>
-            <h1>
-
-                <a href="./pages/Toamasina.html">Toamasina</a>
+    <section class="regionIntro">
+        <article class="">
+            <h1 class="title">
+                <a href="./pages/Antsiranana.html">Antsiranana</a>
             </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste hic qui delectus voluptatibus assumenda
+            <p class="little-descri">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Iste hic qui delectus voluptatibus assumenda
                 quod, eligendi minima iure at eius!
             </p>
         </article>
-        <figure>
-            <a href="./pages/Antananarivo.html">
-                <img src="./assets/img/home.jpg" alt="regionname" srcset="" />
-            </a>
 
-        </figure>
     </section>
+    <div class="overView">
+        <div class="comment2">
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/antsiranana/la-bodega.jpg" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>La Bodega</h3>
+                    <div>
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                    </div>
+                    <p class="clamp">
+                        Delicious food. Good atmosphere. Situated in a safe area. The food served is fresh and
+                        quite tasty...
+                        The service is not slow and the prices
+                        are value for money.
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./../assets/img/antsiranana/les-trois-baies.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Les Trois Baies</h3>
+                    <div>
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                    </div>
+                    <p class="clamp">
+                        Les Trois Baies represent a collection of three
+                        warm bays boasting white sand and clear
+                        blue water. Sakalava Bay
+                        is loved by surfers
+                        for its waves and wind, but if you prefer a
+                        calmer swim, head to the remaining two beaches. Take snorkeling gear to get to know the
+                        marine life, or just stretch out on the sand. The area is generally not crowded on
+                        weekdays, so go then if you prefer a solo experience. Refreshments and other services
+                        are not offered here, so take plenty of water and snacks. Before you head to Antsiranana
+                        (Diego Suarez), plan trip itinerary details with our user-friendly Antsiranana (Diego
+                        Suarez) road trip planner, to make sure you see all that Antsiranana (Diego Suarez) has
+                        to offer, including Les Trois Baies.
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./../assets/img/antsiranana/ankarana-special-reserve.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Ankarana Special Reserve</h3>
+                    <div>
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                    </div>
+                    <p class="clamp">
+                        Cross a deep ravine on a suspension foot bridge
+                        and admire Jurassic limestone formations
+                        at Ankarana Special Reserve, a wildlife reserve with some of the highest population
+                        density of primates in the world. Dark karst pinnacles, cave systems, and underground
+                        waters with dry deciduous and semi-deciduous forests cover 18,220 hectares (45,023
+                        acres). Watch closely to see crowned lemurs, Sanford's brown lemur, Perrier's black
+                        lemur, brown mouse lemur, and dwarf lemurs, and you can also spot chameleons and
+                        leaf-tailed geckos. Many birds inhabit the area, including paradise flycatcher and the
+                        common jery. Plan to visit Ankarana Special Reserve and other customer-reviewed,
+                        writer-recommended Antsiranana (Diego Suarez) attractions using our Antsiranana (Diego
+                        Suarez) trip planning site.
+                    </p>
+                </div>
+
+
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./../assets/img/antsiranana/getlstd-property-photo.jpg" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>La Fleur De Sel</h3>
+                    <div>
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+
+                        <img src="./../assets/icons/star.svg" alt="" srcset="" class="star-icon">
+                    </div>
+                    <p class="clamp">
+                        The food is delicious, the setting of the restaurant
+                        is beautiful and the staff is very
+                        friendly! Also the little bar area at the pool is very nice: cocktails are great! We
+                        will definitely go here far more often the rest of the time we are in Diego.
+                    </p>
+
+
+
+                </div>
+
+            </div>
+            <a href="./pages/Antsiranana.html">
+                <button class="chevron-button">
+                    <img src="./assets/icons/right-chevron.png" class="chevron-icon" alt="" srcset="">
+                </button>
+            </a>
+        </div>
+
+    </div>
 
     <!-- Region four-->
-    <section class="regionIntroEven">
-
-        <figure>
-            <a href="./pages/Antananarivo.html">
-                <img src="./assets/img/home.jpg" alt="regionname" srcset="" />
-            </a>
-
-        </figure>
-        <article>
-            <h1>
-                <a href="./pages/Antsiranana.html">Antsiranana</a>
-
+    <section class="regionIntro">
+        <article class="">
+            <h1 class="title">
+                <a href="./pages/Antananarivo.html">Antananarivo</a>
             </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste hic qui delectus voluptatibus assumenda
+            <p class="little-descri">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Iste hic qui delectus voluptatibus assumenda
                 quod, eligendi minima iure at eius!
             </p>
         </article>
+
     </section>
+    <div class="overView">
+        <div class="comment2">
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <a href="./pages/Antananarivo.html">
+                <button class="chevron-button">
+                    <img src="./assets/icons/right-chevron.png" class="chevron-icon" alt="" srcset="">
+                </button>
+            </a>
+        </div>
+
+    </div>
 
     <!-- Region five-->
-    <section class="regionIntroOdd">
-        <article>
-            <h1>
-                <a href="./pages/Toliara.html">Toliara</a>
-
+    <section class="regionIntro">
+        <article class="">
+            <h1 class="title">
+                <a href="./pages/Antananarivo.html">Antananarivo</a>
             </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste hic qui delectus voluptatibus assumenda
+            <p class="little-descri">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Iste hic qui delectus voluptatibus assumenda
                 quod, eligendi minima iure at eius!
             </p>
         </article>
-        <figure>
-            <a href="./pages/Toliara.html">
-                <img src="./assets/img/home.jpg" alt="regionname" srcset="" />
+
+    </section>
+    <div class="overView">
+        <div class="comment2">
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+
+            <a href="./pages/Antananarivo.html">
+                <button class="chevron-button">
+                    <img src="./assets/icons/right-chevron.png" class="chevron-icon" alt="" srcset="">
+                </button>
             </a>
 
-        </figure>
-    </section>
+        </div>
+
+
+    </div>
 
 
     <!-- Region six-->
-    <section class="regionIntroEven">
-        <figure>
-            <a href="./pages/Fianarantsoa.html">
-                <img src="./assets/img/home.jpg" alt="regionname" srcset="" />
-            </a>
-        </figure>
-        <article>
-            <h1>
-                <a href="./pages/Fianarantsoa.html">Fianarantsoa</a>
-
+    <section class="regionIntro">
+        <article class="">
+            <h1 class="title">
+                <a href="./pages/Antananarivo.html">Antananarivo</a>
             </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste hic qui delectus voluptatibus assumenda
+            <p class="little-descri">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Iste hic qui delectus voluptatibus assumenda
                 quod, eligendi minima iure at eius!
             </p>
         </article>
 
     </section>
+    <div class="overView">
+        <div class="comment2">
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <div class="card-2">
+                <div class="cardHeader-2">
+                    <figure>
+                        <img src="./assets/img/1.webp" alt="" srcset="">
+                    </figure>
+
+                </div>
+                <div class="description">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="clamp">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, eligendi!
+                    </p>
+                </div>
+
+
+            </div>
+            <a href="./pages/Antananarivo.html">
+                <button class="chevron-button">
+                    <img src="./assets/icons/right-chevron.png" class="chevron-icon" alt="" srcset="">
+                </button>
+            </a>
+        </div>
+
+    </div>
 
 
     <!-- Comment section -->
@@ -177,44 +718,107 @@
         <hr>
         <div class="comment">
             <div class="card">
-                <figure>
-                    <img src="./assets/avatar/User Avatar 2.svg" alt="" srcset="">
-                </figure>
-                <h2>User name</h2>
+                <div class="cardHeader">
+                    <figure>
+                        <img src="./assets/avatar/User Avatar 2.svg" alt="" srcset="">
+                    </figure>
+                    <h2>Brian Thiel</h2>
+                </div>
+
                 <blockquote>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptate, dolore praesentium ea
-                    cupiditate tempore quibusdam ab omnis esse labore.
+                    <img src="./assets/icons/icon_quote.svg" alt="" srcset="" class="quote-start">
+
+                    Our crew was everything and more than expected. It lived up to the MadaTrip' emphasis on
+                    culture, history, archaeology, comfort and camaraderie.
+
                 </blockquote>
+
+                <div class="cardDate">
+                    <div>
+                        ❤ 6
+                    </div>
+                    <div>
+                        05:39 Am - 02 Dec 2021
+                    </div>
+                </div>
             </div>
             <div class="card">
-                <figure>
-                    <img src="./assets/avatar/User Avatar 32.svg" alt="" srcset="">
-                </figure>
-                <h2>User name</h2>
+                <div class="cardHeader">
+                    <figure>
+                        <img src="./assets/avatar/User Avatar 32.svg" alt="" srcset="">
+                    </figure>
+                    <h2>Ilya Strebulaev</h2>
+                </div>
+
                 <blockquote>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptate, dolore praesentium ea
-                    cupiditate tempore quibusdam ab omnis esse labore.
+                    <img src="./assets/icons/icon_quote.svg" alt="" srcset="" class="quote-start">
+
+                    We had the most remarkable family tour with MadaTrip. Not only everything perfect, but
+                    we felt, in every instance, that our crew truly cared about us.
+
                 </blockquote>
+
+                <div class="cardDate">
+                    <div>
+                        ❤ 5
+                    </div>
+                    <div>
+                        08:39 Am - 07 Dec 2021
+                    </div>
+                </div>
             </div>
             <div class="card">
-                <figure>
-                    <img src="./assets/avatar/userAvatar01.svg" alt="" srcset="">
-                </figure>
-                <h2>User name</h2>
+                <div class="cardHeader">
+                    <figure>
+                        <img src="./assets/avatar/userAvatar01.svg" alt="" srcset="">
+                    </figure>
+                    <h2>Suzy Lautze</h2>
+                </div>
+
+
                 <blockquote>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptate, dolore praesentium ea
-                    cupiditate tempore quibusdam ab omnis esse labore.
+                    <img src="./assets/icons/icon_quote.svg" alt="" srcset="" class="quote-start">
+
+                    The holiday of a life time - our gulet adventure in Madagascar island was without a
+                    doubt our favourite family trip. The comfort and the delicious food,
+                    were uncredible.
+
+
                 </blockquote>
+
+                <div class="cardDate">
+                    <div>
+                        ❤ 8
+                    </div>
+                    <div>
+                        04:39 Am - 07 Jan 2022
+                    </div>
+                </div>
             </div>
             <div class="card">
-                <figure>
-                    <img src="./assets/avatar/userAvatar03.svg" alt="" srcset="">
-                </figure>
-                <h2>User name</h2>
+                <div class="cardHeader">
+                    <figure>
+                        <img src="./assets/avatar/userAvatar03.svg" alt="" srcset="">
+                    </figure>
+                    <h2>Janet Callaghan</h2>
+                </div>
+
                 <blockquote>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptate, dolore praesentium ea
-                    cupiditate tempore quibusdam ab omnis esse labore.
+                    <img src="./assets/icons/icon_quote.svg" alt="" srcset="" class="quote-start">
+
+                    What a wonderful experience! The two tour leaders who were archaeologists enthralled us
+                    with the history of the island. The food was bountiful.
+
                 </blockquote>
+
+                <div class="cardDate">
+                    <div>
+                        ❤ 3
+                    </div>
+                    <div>
+                        10:39 Am - 07 Mars 2022
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -228,34 +832,49 @@
         <hr>
         <div>
             <div class="contact">
-                <h4>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptates similique architecto
-                    assumenda
-                    sint
-                    eveniet doloremque magni nderit in! Culpa, vero suscipit.
+                <h4 class="">
+                    We are a startup that plans your trip around Madagascar, we offer different
+                    services that we think will fill your needs. Below are some contact if you
+                    have questions about us.
                 </h4>
 
                 <ul>
-                    <li>email</li>
-                    <li>phone</li>
-                    <li>facebook</li>
+                    <li class="contact-item">
+                        <img src="./assets/icons/instagram.png" class="contact-icon" alt="" srcset="">
+                        Instagram
+                    </li>
+                    <li class="contact-item">
+                        <img src="./assets/icons/logo-facebook.svg" class="contact-icon" alt="" srcset="">
+                        Facebook
+                    </li>
+                    <li class="contact-item">
+                        <img src="./assets/icons/twitter(1).png" class="contact-icon" alt="" srcset="">
+                        Twitter
+                    </li>
                 </ul>
             </div>
             <div class="getStarted">
+                <img class="diamond" src="./assets/illustration/daimond_morphing_pink.gif" alt="" srcset="">
                 <h2>
-                    Lorem ipsum dolor sit sicing elit. Pariatur, maiores. Molestiae architecto
-                    eligendi nulla hic!
+                    Do you want to travel with us and live the best experience
+                    of your life ? Just click the button below.
                 </h2>
-                <button class="button">Get started</button>
+                <a href="./pages/Signup.html"> <button class="button">Get started</button></a>
             </div>
         </div>
 
         <div class="copyright">
-            name project &copy; 2022
+            <p>
+                MadaTrip &copy;<span id="date"></span>
+            </p>
+            <script>
+                var date = new Date();
+                document.getElementById('date').innerHTML = `${date.getFullYear()}`
+            </script>
         </div>
     </footer>
 
-    <script>
+    <!-- <script>
         window.onscroll = function () {
             myFunction();
         }
@@ -273,7 +892,7 @@
                 navbar.classList.remove("sticky");
             }
         }
-    </script>
+    </script> -->
 </body>
 
 </html>
