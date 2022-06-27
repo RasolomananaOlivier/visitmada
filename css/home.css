@@ -7,7 +7,7 @@
     height: 100vh;
     margin: 0;
     position: relative;
-    animation: slide 20s infinite;
+
 }
 
 @keyframes slide {
