@@ -42,7 +42,7 @@
     bottom: 1rem;
     width: 18rem;
     height: 13rem;
-
+    object-fit: cover;
 }
 
 .description {

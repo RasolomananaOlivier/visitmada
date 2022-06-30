@@ -1,0 +1,44 @@
+.paymentContainer {
+    margin-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.paymentForm {
+    width: 100%
+}
+
+.paymentIllustration {
+    width: 100%
+}
+
+.paymentIllustration img {
+    width: 100%
+}
+
+.paymentSubmit {
+    width: 100%;
+    padding: 0.3em 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.submitText {
+    font-size: x-large;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+
+    .paymentForm,
+    .paymentIllustration {
+        width: 30%
+    }
+}

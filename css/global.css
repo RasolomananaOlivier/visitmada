@@ -20,6 +20,19 @@ article>h1>a {
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: initial;
+}
+
+.radioItem {
+    display: flex;
+    align-items: center;
+}
+
 .button {
     background-color: var(--themeColor);
     color: white;

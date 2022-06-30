@@ -1,54 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="./../css/global/Global.css" />
+    <!-- Control the global theme , nav ,and etc ... -->
+    <link rel="stylesheet" href="./../css/global.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/global.css">
-    <link rel="stylesheet" href="./../css/Signup.css">
-    <!-- use this style if you want to add the Dongle font on your website -->
-    <link rel="stylesheet" href="./../css/withFont.css">
-    <title>Signup</title>
-</head>
+    <!-- Control the style of the class "card-2" -->
+    <link rel="stylesheet" href="./../css/card.css" />
+    <!-- Control the whole style of the page -->
+    <link rel="stylesheet" href="./../css/global/region.css" />
+    <!-- Control the footer of the page , the same accross the whole page -->
+    <!-- <link rel="stylesheet" href="./../css/footer.css" /> -->
 
-<body>
-    <div class="signupForm">
+    <link rel="stylesheet" href="../css/form.css" />
+    <link rel="stylesheet" href="../css/signup.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - Madatrip</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <ul class="gridNav">
+        <li class="logo"><span class="logo-part1">Mada</span>Trip</li>
+
+        <ul class="middleItems">
+          <li class="navItem middle"><a href="/">Home</a></li>
+          <li class="navItem middle"><a href="#contact">Contact</a></li>
+          <li class="navItem middle dropdown">
+            <div class="dropbutton">Regions</div>
+            <div class="dropdown-content-nav">
+              <a href="./Antananarivo.html">Antananarivo</a>
+              <a href="./Toamasina.html">Toamasina</a>
+              <a href="./Antsiranana.html">Antsiranana</a>
+              <a href="./Mahajanga.html">Mahajanga</a>
+              <a href="./Fianarantsoa.html">Fianarantsoa</a>
+              <a href="./Toliara.html">Toliara</a>
+            </div>
+          </li>
+        </ul>
+        <li class="navItem"><a href="./Signup.html">Go for a trip</a></li>
+        <ul class="dropdown-btn">
+          <button class="buttonMenu">
+            <img src="../assets/icons/humberger menu.svg" />
+          </button>
+          <div class="dropdown-content">
+            <a href="/" class="navItemSmallScreen">Home</a>
+            <a href="#contact" class="navItemSmallScreen">Contact</a>
+            <a href="./Signup.html" class="navItemSmallScreen">Go for a trip</a>
+            <li class="navItemSmallScreen dropdown">
+              <div class="dropbutton">Regions</div>
+              <div class="dropdown-content-nav2">
+                <a href="./Antananarivo.html">Antananarivo</a>
+                <a href="./Toamasina.html">Toamasina</a>
+                <a href="./Antsiranana.html">Antsiranana</a>
+                <a href="./Mahajanga.html">Mahajanga</a>
+                <a href="./Fianarantsoa.html">Fianarantsoa</a>
+                <a href="./Toliara.html">Toliara</a>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </ul>
+    </nav>
+    <main class="signupContainer">
+      <div class="signupForm">
         <!-- Form field -->
         <div class="form">
-            <h1>Signup</h1>
-            <form>
-                <fieldset>
-                    <div class="input">
-                        <label for="">Name</label>
-                        <input type="text" placeholder="Enter your name">
-                    </div>
-                    <div class="input">
-                        <label for="">Phone number</label>
-                        <input type="tel" placeholder="Enter your phone number">
-                    </div>
-                    <div class="input">
-                        <label for="">Email</label>
-                        <input type="email" placeholder="Enter your email">
-                    </div>
-                    <div class="input">
-                        <label for="">Password</label>
-                        <input type="password" placeholder="Enter your password">
-                    </div>
+          <h1>Signup</h1>
+          <form>
+            <fieldset>
+              <div class="inputItem">
+                <label for="name" class="label">Name :</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="input"
+                  id="name"
+                />
+              </div>
+              <div class="inputItem">
+                <label for="tel" class="label">Phone number :</label>
+                <input
+                  type="tel"
+                  placeholder="Enter your phone number"
+                  class="input"
+                  id="tel"
+                />
+              </div>
+              <div class="inputItem">
+                <label for="email" class="label">Email :</label>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="input"
+                  id="email"
+                />
+              </div>
+              <div class="inputItem">
+                <label for="password" class="label">Password :</label>
+                <input
+                  type="password"
+                  placeholder="Enter your password"
+                  class="input"
+                  id="password"
+                />
+              </div>
 
-                    <a href="./Payment.html"><button class="button button-full">Submit</button></a>
-
-
-
-
-                    <!-- <button><a href="">Submit</a></button> -->
-                </fieldset>
-            </form>
+              <div>
+                <a href="./Payment.html" class="button signupSubmit">
+                  <span class="submitText"> Submit </span>
+                </a>
+              </div>
+            </fieldset>
+          </form>
         </div>
-        <figure>
-            <img src="./../assets/img/signup/index.jpg" alt="Presentation of our service">
-        </figure>
-    </div>
-</body>
-
+      </div>
+      <figure class="signupIllustration">
+        <img
+          src="./../assets/img/signup/index.jpg"
+          alt="Presentation of our service"
+          class=""
+        />
+      </figure>
+    </main>
+  </body>
 </html>
