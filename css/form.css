@@ -1,0 +1,27 @@
+.label {
+    font-size: larger;
+    display: inline-block;
+    margin-bottom: 0.3em;
+}
+
+.input {
+    padding: 0.6em 0.6em;
+    font-size: large;
+    border: 1px solid gray;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.input:focus {
+    outline: solid 3px var(--themeColor);
+    border-color: transparent;
+}
+
+.inputItem {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+}

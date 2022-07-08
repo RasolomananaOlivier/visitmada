@@ -56,7 +56,7 @@ footer div {
     align-items: center;
 
     box-shadow: var(--shadow);
-    border: none;
+    border: 1px solid #ccc;
     position: relative;
     top: 7rem;
     right: 2rem;
